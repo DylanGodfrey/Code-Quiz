@@ -1,0 +1,154 @@
+:root{
+    --primary-colour: #FFA500;
+    --secondary-colour: #294a57;
+    --tertiary-color: beige;
+}
+
+html{
+    line-height: 1.5em;
+    height: 100%;
+    
+    text-align: center;
+}
+
+body{
+    color: var(--primary-colour);
+    background-color: var(--tertiary-color);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    justify-content:space-evenly;
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    padding: var(--default-padding);
+}
+
+main{
+    display: block;
+    max-width: 95%;
+    margin: auto;
+    
+    position: relative;
+    top: 20%;
+}
+
+h1{
+    font-size: 3em;
+    line-height: 2em;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+button{
+    background-color: var(--secondary-colour);
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+button:hover{
+    background-color: var(--primary-colour);
+    color: white;
+}
+
+form{
+    line-height: 4em;
+}
+
+form button{
+    padding: 5px 40px;
+}
+
+form input{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-colour);
+    color: #FFF;
+}
+
+/* ID selectors */
+
+#intro{
+    margin: 10px;
+}
+
+#quiz{
+    display: none;
+}
+
+#result{
+    text-align: center;
+}
+
+#choices li{
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 40px 10px;
+    margin: 5px;
+    text-align: center;
+    max-width: 95%;
+}
+
+#choices li:hover{
+    background-color: var(--secondary-colour);
+    color: white;
+}
+
+#user-score-container{
+    display: none;
+}
+
+#highscore{
+    line-height: 3em;
+    display: none;
+}
+
+#highscore ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#highscore ol li{
+    border: #294a57 1px solid;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+
+    main {
+        margin-left:50px;
+        margin-right:50px;
+        top: 0%;
+    }
+  }
+
+@media only screen and (max-width: 520px) {
+    body {
+      font-size: 130%;
+    }
+    main {
+        top: 0%;
+        margin-left:12px;
+        margin-right:12px;
+    }
+}
